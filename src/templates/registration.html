@@ -1,0 +1,142 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+
+ <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+  <script src="./static/css/jquery.min.js"></script>
+  <script src="./static/css/bootstrap.min.js"></script>
+</head>
+
+<body>
+<style>
+.jumbotron {
+  background-color:#cceaf5;
+
+<!--   background-image:url("iim.jpg");
+-->   padding-top:10px;
+   padding-bottom:10px;
+}
+.btn-primary
+{
+background-color:#286090;
+}
+body
+{
+
+background-color:#0099FF;
+}
+#col{
+background-color:#999999;
+}
+
+</style>
+<div class="jumbotron text-center ">
+
+  <h1>E vaccination</h1>
+  <p>userfriedly</p>
+</div>
+
+ <div class="col-sm-4">
+     <p align="center">
+	 Vaccination to Infants: Young children are at increased risk for infectious diseases because their immune systems have not yet built up the necessary defenses to fight serious infections and diseases. As a result, diseases like whooping cough or pneumococcal disease can be very serious ? and even deadly ? for infants and young children
+
+	 </p>
+	 <img src="./static/images.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+
+    <p align="center">
+	 Vaccination to Infants: Young children are at increased risk for infectious diseases because their immune systems have not yet built up the necessary defenses to fight serious infections and diseases. As a result, diseases like whooping cough or pneumococcal disease can be very serious ? and even deadly ? for infants and young children
+
+	 </p>
+    </div>
+	 <div class="col-sm-4"  id="col">
+   <p>
+
+
+    <h3>Registration</h3>
+
+       <form method="post" action="/register" enctype="multipart/form-data">
+    <div class="input-group">
+
+      <input type="text" class="form-control" name="firstname" placeholder="FIRST NAME">
+    </div>
+	<br>
+	 <div class="input-group">
+
+      <input type="text" class="form-control" name="lastname" placeholder="LAST NAME">
+    </div>
+	 <div class="input-group">
+     <div class="radio">
+  <label><input type="radio" name="gender" checked value="male">MALE</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="gender" value="female">FEMALE</label>
+</div>
+    </div>
+
+    <div class="input-group">
+
+      <input  type="date" class="form-control" name="dob" >
+    </div>
+    <br>
+	<div class="input-group">
+	<textarea name="address" placeholder="Address" cols="20" rows="4"></textarea>
+	</div>
+	<br>
+
+
+	<div class="input-qroup">
+
+	<div class="checkbox">
+  <label><input type="checkbox" value="sslc" name="qualification">sslc</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" value="plus two" name="qualification">plus two</label>
+</div>
+	</div>
+
+	<div class="input-group">
+
+	 <select class="form-control" name="state">
+	 <option>--select state--</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+	</div>
+	<br>
+	<div class="input-group">
+
+      <input  type="file" class="form-control" name="file" >
+    </div>
+	<br />
+
+	<div class="input-group">
+
+      <input type="text" class="form-control" name="username" placeholder="username">
+    </div>
+	<br>
+	 <div class="input-group">
+
+      <input type="password" class="form-control" name="password" placeholder="password" >
+    </div>
+	<br>
+	 <div class="input-group">
+      <input type="submit"  value="Register" />
+
+
+    </div>
+
+
+  </form>
+   </div>
+
+   <div class="col-sm-4">
+	 <img src="./static/img.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		 <img src="./static/im.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+
+   </div>
+</body>
+</html>

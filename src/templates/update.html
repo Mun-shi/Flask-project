@@ -1,0 +1,128 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+
+ <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+  <script src="./static/css/jquery.min.js"></script>
+  <script src="./static/css/bootstrap.min.js"></script>
+</head>
+
+<body>
+<style>
+.jumbotron {
+  background-color:#cceaf5;
+ 
+<!--   background-image:url("iim.jpg");
+-->   padding-top:10px;
+   padding-bottom:10px;
+}
+.btn-primary
+{
+background-color:#286090;
+}
+body
+{
+
+background-color:#0099FF;
+}
+#col{
+background-color: #00CCFF;
+}
+
+</style>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">E vaccine</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="/userhome">Home</a></li>
+   
+      <li class="active"><a href="#">Update</a></li>
+      <li><a href="/">logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+ <div class="col-sm-4">
+    
+    </div>
+	 <div class="col-sm-4"  id="col">
+   <p>
+   
+   
+    <h3></h3>
+
+      <p> <form action="/updatedata "method="post">
+    <div class="input-group">
+      
+      <input type="text" class="form-control" name="firstname" value="{{val[1]}}" placeholder="FIRST NAME">
+    </div>
+	<br>
+	 <div class="input-group">
+      
+      <input type="text" class="form-control" name="lastname" value="{{val[2]}}" placeholder="LAST NAME">
+    </div>
+	 <div class="input-group">
+     <div class="radio">
+  <label><input type="radio" name="gender" checked value="male" {%if val[3]=="male" %} checked{%endif%}>MALE</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="gender" value="female" {%if val[3]=="female" %} checked{%endif%}>FEMALE</label>
+</div>
+    </div>
+	
+    <div class="input-group">
+
+      <input  type="date" class="form-control" name="dob" value="{{val[4]}}" >
+    </div>
+    <br>
+	<div class="input-group">
+	<textarea name="address" placeholder="Address" cols="20" rows="4">{{val[5]}}</textarea>
+	</div>
+	<br>
+	
+	
+	<div class="input-qroup">
+	
+	<div class="checkbox">
+  <label><input type="checkbox" value="sslc" name="qualification" {% if 'sslc' in val[6] %}checked{% endif %}>sslc</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" value="plus two" name="qualification" {% if 'plus two' in val[6] %}checked{% endif %}>plus two</label>
+</div>
+	</div>
+	
+	<div class="input-group">
+	
+	 <select class="form-control" name="state">
+	 <option>--select state--</option>
+        <option {% if '1' in val[7] %}selected{% endif %}>1</option>
+        <option  {% if '2' in val[7] %}selected{% endif %}>2</option>
+        <option {% if '3' in val[7] %}selected{% endif %}>3</option>
+        <option {% if '4' in val[7] %}selected{% endif %}>4</option>
+      </select>
+	</div>
+	<br>
+	<div class="input-group">
+
+      <input  type="file" class="form-control" name="file" >
+    </div>
+	<br />
+    <div class="input-group">
+      <input type="submit" class="btn btn-primary" value="update" />
+	  
+
+    </div>
+	
+
+  </form></p>
+   </div>
+   
+   <div class="col-sm-4">
+	 
+   </div>
+</body>
+</html>

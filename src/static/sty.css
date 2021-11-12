@@ -1,0 +1,26 @@
+.jumbotron {
+  background-color:#cceaf5;
+ 
+<!--   background-image:url("iim.jpg");
+-->   padding-top:10px;
+   padding-bottom:10px;
+}
+.btn-primary
+{
+background-color:#286090;
+}
+#divc
+{
+
+background-color:#0099FF;
+}
+#col{
+background-color:#999999;
+}
+body
+{
+
+background-color:#0099FF;
+}
+/* CSS Document */
+
